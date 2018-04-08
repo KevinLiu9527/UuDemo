@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/app_bar_height"
+        android:layout_alignParentTop="true"
+        android:background="@mipmap/slide_top_bg" />
+
+
+    <android.support.design.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#00000000">
+
+        <android.support.design.widget.AppBarLayout
+            android:id="@+id/app_bar"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/app_bar_height"
+            android:background="#00000000"
+            android:fitsSystemWindows="true">
+
+            <com.kevin.uudemo.utils.CollapsingImageTextLayout
+                android:id="@+id/coll"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#00000000"
+                app:img_id="@+id/test_img"
+                app:img_margin_left="10dp"
+                app:img_scale="0.6"
+                app:layout_scrollFlags="scroll|exitUntilCollapsed"
+                app:text_id="@+id/test_text"
+                app:text_margin_left="50dp"
+                app:text_scale="1.0"
+                app:title_id="@+id/tab_ttl">
+
+                <RelativeLayout
+                    android:id="@+id/tab_ttl"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:background="#00000000"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/msg_iv"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="10dp"
+                        android:layout_toLeftOf="@+id/set_iv"
+                        android:src="@mipmap/icon_slide_message" />
+
+                    <ImageView
+                        android:id="@+id/set_iv"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="10dp"
+                        android:src="@mipmap/icon_slide_set" />
+                </RelativeLayout>
+
+                <ImageView
+                    android:id="@+id/test_img"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="30dp"
+                    android:background="#00000000"
+                    android:scaleType="fitXY"
+                    android:src="@mipmap/ysf_def_avatar_user" />
+
+                <TextView
+                    android:id="@+id/test_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/test_img"
+                    android:text="登录/注册"
+                    android:textColor="#fff"
+                    android:textSize="16sp" />
+            </com.kevin.uudemo.utils.CollapsingImageTextLayout>
+
+        </android.support.design.widget.AppBarLayout>
+
+
+        <android.support.v4.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/corners_white"
+            app:behavior_overlapTop="35dp"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:orientation="horizontal"
+                    android:weightSum="4">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="1"
+                        android:drawableTop="@drawable/icon_ff_order"
+                        android:gravity="center"
+                        android:text="全部订单" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="1"
+                        android:drawableTop="@drawable/icon_wait_pay_new"
+                        android:gravity="center"
+                        android:text="待支付" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="1"
+                        android:drawableTop="@drawable/icon_wait_sure_new"
+                        android:gravity="center"
+                        android:text="待接单" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="1"
+                        android:drawableTop="@drawable/icon_doing_order_new"
+                        android:gravity="center"
+                        android:text="进行中" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="#ddd" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="上面的都看得懂吧
+                    ，每个陌生的属性都是讲过上面的都看得懂吧，
+                    每个陌生的属性都是讲过上面的都看得懂吧，
+                    每个陌生的属性都是讲过上面的都看得懂吧，
+                    每个陌生的属性都是讲过上面的都看得懂吧，
+                    每个陌生的属性都是讲过上面的都看得懂吧，
+                    每个陌生的属性都是讲过上面的都看得懂吧，
+                    每个陌生的属性都是讲过上面的都看得懂吧，"
+                    android:textSize="20sp" />
+            </LinearLayout>
+        </android.support.v4.widget.NestedScrollView>
+
+    </android.support.design.widget.CoordinatorLayout>
+
+</RelativeLayout>

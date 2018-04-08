@@ -1,9 +1,6 @@
 # UuDemo
 1、仿UU跑腿首页动画，仅作参考
- 
-  
-放一个Demo的截图吧：
-  
+ 效果图：
 <image src="https://github.com/KevinLiu9527/UuDemo/blob/master/img/UU%E8%B7%91%E8%85%BF%E4%BE%8B%E5%AD%90.gif"/>
 
 ## 框架特性

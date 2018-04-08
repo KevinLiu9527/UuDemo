@@ -4,7 +4,7 @@
   
 因为本项目是非UI类型的库，感觉光秃秃的，放一个Demo的截图吧：
   
-<image src="./image/1.gif"/>
+<image src="./img/1.gif"/>
 
 ## 框架特性
 *主要是一些design效果
